@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bd{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ul {
+    display: flex;
+    list-style: none;
+    transition: all 1s ease;
+}
+
+.slider {
+  width: 675px;
+  height: 375px;
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 3px 10px 15px 0px rgba(0,0,0,0.4);
+}
+
+.slider ul li img {
+  width: 675px;
+  height: 375px;
+  border-radius: 3px;
+}

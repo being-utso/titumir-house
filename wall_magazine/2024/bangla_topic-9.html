@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wall Magazine TH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+      margin: 10px;
+      font-size: 20px;
+      color: #4d4d4d;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffd700;
+        position: relative;
+        text-decoration: none;
+        margin: 0 12px;
+        font-family: oswald;
+      }
+      .navbar-dark .navbar-nav .nav-link:before{
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: 5px;
+        left: 0;
+        background: #ffd700;
+        transition: all 0.4s ease;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 100%;
+       right: 13px;
+       color: #ffd700;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover{
+      color: #ffd700;
+      }
+      .navbar-dark .navbar-brand{
+        color: #ffd700;
+      }
+
+      .link{
+        text-decoration: none;
+        color: #353935;
+        font-family: fantasy;
+      }
+      
+      .link:hover{
+        text-decoration: underline;
+        color: #353935;
+
+      }
+
+  </style>
+</head>
+<body>
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Bangla Topic 9</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+<div  style="background-color: #f2f2f2;">
+
+
+<div class="mt-5 container">
+    <h1 class="text-center display-5">কর্ণফুলী টানেল</h1>
+    <h4 class="text-center"> ~ ক্যাডেট ফেরদৌস, ২৪৪৬ </h4> 
+  </div><br>
+
+
+  <article class="container">
+    <p>নামঃ কর্ণফুলী টানেল  <br>
+উদ্বোধন ২৮ অক্টোবর ২০২৩  <br>
+নির্মাণকারী , রক্ষণাবেক্ষনণ ও টোল আদায়কারী প্রতিষ্ঠানঃ চায়না কমুউনিকেশন লিমিটেড CCCC <br>
+অর্থায়নেঃ চীনের এক্সিম ব্যাংক ও বাংলাদেশ সরকার  <br>
+GDP বৃদ্ধিতে – ০.১৭   <br><br>
+একবিংশ শতাব্দীতে বিজ্ঞান ও প্রযুক্তির উৎকষ সুবাদে দ্রুতবেগে এগিয়ে যাচ্ছে  বিশ্ব , পিছিয়ে নেই আমাদের বাংলাদেশও । সম্প্রতি কর্ণফুলী টানেল নির্মাণ এর উৎকৃষ্ট উদাহরণ । টানেলটি তৈরির মাধ্যমে দক্ষিণ এশিয়ার ১ম দেশ হিসেবে নদীর তলদেশে টানেল যুগে প্রবেশ করে বাংলাদেশ । একে বঙ্গবন্ধু শেখ মুজিবুর রহমান টানেল নামেও ডাকা হয়। চীনের সাংহাই নগরের আদলে তৈরি করা চট্টগ্রাম শহরের one city & two towns এর ভিত্তিতে টানেলটি নির্মিত  এর দৈর্ঘ্য ৩.৩২ কিমি এবং প্রস্থ ১০ মি । টিউব  বিশিষ্ট এই টানেলটি কর্ণফুলী নদীর ১৫০ ফিট  নিচ দিয়ে নির্মিত হয়েচে । ১৪ই অক্টোবর , ২০১৬ সালে ভিত্তিপ্রস্তর স্থাপনের পর ২৪ ফেব্রুয়ারী ২০১৯ সালে নির্মাণ কাজের আনুষ্ঠানিক উদ্বোধন হলে টানেলটির  কাজ দ্রুত এগিয়ে যায় । চট্টগ্রামের আনোয়ারা থেকে পতেঙ্গা পর্যন্ত বিস্তৃত এ টানেলটির উদ্বোধন হয় ২৮ অক্টোবর ২০২৩ সালে । চায়না কমিউনিকেশন এন্ড কন্ট্রাকশন কোম্পানি লিঃ এই টানেল নির্মাণ  রক্ষণাবেক্ষনণ ও টোল আদায়ের কাজে নিয়োজিত রয়েছে । টানেলটির নির্মাণ কাজে যাবতীয় অর্থায়নে সাহায্য করছে চীনের এক্সিম ব্যাংক ও বাংলাদেশ সরকার ।  এই ৮ লেন বিশিষ্ট সড়ক টানেলটি কর্ণফুলী নদীর দুই তীরের অঞ্চলকে সুড়ঙ্গ পথে যুক্ত করবে। এতে চট্টগ্রামে বসবাসরত ৬০লাখ মানুষের যেমন উপকার হবে , তেমনি ঢাকা থেকে  কক্সবাজারমুখি বিভিন্ন ধরনের যাতায়াত করবে সুহজ ও দ্রুতগতিক । বছরব্যাপী পর্যটকদের সহজ ও আরামদায়ক যাতায়াত নিশ্চিত করবে এই টানেল । সড়কে কমবে যানবাহনের চাপ । ৯ মাত্রার ভুমিকম্প সহনশীল এই টানেল শিল্প কারখানার বিকাশ সাধন করবে । চট্টগ্রাম সমুদ্র বন্দরের মাধ্যমে বিভিন্ন ধরনের কাঁচামাল দেশে আসে । সেসবের পরিবহন খরচো কমে আসবে । টানেলটি বাংলাদেশের GDP বাড়াবে ০.১৭ % বেকারত্তের হার কমআবে এই টানেল । খরস্রোতা কর্ণফুলী নদীর বুক চিরে নির্মিত ের টানেলটি খুবই দৃষ্টিনন্দন ।   কর্ণফুলী টানেলের অন্ধকারাছন্ন পরিবেশ আলোকিত হবে কৃত্তিম আলোয় ; এর মাঝেই বাংলাদেশের মানুষ খুঁজে পাবে   সোনার বাংলার স্বপ্নকে । সেই স্বপ্ন আজ বাস্তবায়িত হচ্ছে শেখ হাসিনার হাত ধরে । ক্ষিপ্র গতিতে এভাবেই অগ্রগতির অদম্য জাত্রায় এগিয়ে যাক দেশ – এই আমাদের প্রত্যাশা ।  
+ <br>
+ <br></p>
+  </article><br><br>
+
+  <div class="d-flex justify-content-around ">
+    <div class="justify-content-start"><a href="bangla_topic-8.html" class="" style="text-decoration:none; color: #36454f;">&larr; Prev Post</a></div>
+    <div class="justify-content-end"><a href="bangla_topic-10.html" class="" style="text-decoration:none; color: #36454f;">Next Post &rarr;</a></div>
+  </div>
+</div>
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+
+</body>
+</html>

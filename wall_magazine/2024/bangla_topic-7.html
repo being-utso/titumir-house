@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wall Magazine TH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+      margin: 10px;
+      font-size: 20px;
+      color: #4d4d4d;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffd700;
+        position: relative;
+        text-decoration: none;
+        margin: 0 12px;
+        font-family: oswald;
+      }
+      .navbar-dark .navbar-nav .nav-link:before{
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: 5px;
+        left: 0;
+        background: #ffd700;
+        transition: all 0.4s ease;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 100%;
+       right: 13px;
+       color: #ffd700;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover{
+      color: #ffd700;
+      }
+      .navbar-dark .navbar-brand{
+        color: #ffd700;
+      }
+
+      .link{
+        text-decoration: none;
+        color: #353935;
+        font-family: fantasy;
+      }
+      
+      .link:hover{
+        text-decoration: underline;
+        color: #353935;
+
+      }
+
+  </style>
+</head>
+<body>
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Bangla Topic 7</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+<div  style="background-color: #f2f2f2;">
+
+
+<div class="mt-5 container">
+    <h1 class="text-center display-5">সাইফুল আজম</h1>
+    <h4 class="text-center"> ~ ক্যাডেট রিয়াজ, ২৩৯৯ </h4> 
+  </div><br>
+ 
+
+  <article class="container">
+    <p>জন্মঃ সেপ্টেম্বর ১৯৪১ , পাবনা  <br>
+পেশাঃ বৈমানিক  <br><br>
+    সে এল সে দেখল সে জয় করল উক্তিটি যদি কাউকে উদ্দেশ্য করে বলতেই হয় তবে অন্যতম একজন দাবিদার তৎকালীন পাকিস্তান বিমানবাহিনির শ্রেষ্ঠ বাঙালি পাইলট গ্রুপ চাপ্তাইন সাইফুল আজম । তৎকালীন  পুরব বাংলার পাবনা জেলায় ১৯৪১ সালের সেপ্টেম্বরে তার জন্ম । শৈশবের সপ্নের তাড়নায়১৯০৮ সালে যোগদান করেন পাকিস্তান বিমানবাহিনী একাডেমীতে । তার উদ্যম ও কর্মনৈপূর্ণের ফলে বেশ দ্রুতই তিনি বিমান চালনায় সিদ্ধহস্ত হন । ১৯৬০ সালের অক্টোবরে তিনি  পাকিস্তান বিমানবাহিনিতে পাইলট হিসেবে কমিশন প্রাপ্ত হন । তারপর তাকে আর পিছনে ফিরে তাকাতে হয়নি । এফ ৮৬ জঙ্গি বিমান চালানোর কোর্সটি সম্পন্ন করতে তাকে পাঠান হয় যুক্তরাষ্ট্রের অ্যারিজনায় অবস্থিত লুক এয়ার বেসে । সেখানে তিনি যুক্তরাষ্ট্রের বিমানবাহিনী থেকে ‘টপ গান’ উপাধি লাভ করেন । ফেরত আসার পর তাকে ১৪ নং স্কোয়াড্রনের দায়িত্ব দেয়া হয় । তার কর্মজীবনের শুরুর দিকেই ১৯৬৫ সালে ভারত পাকিস্তান যুদ্ধ শুরু হয় । ভারতীয় বাহিনির বিরুদ্ধে ১২ টি হামলা পরিচালনা করেন । তার সাহসিকতার জন্য পাকিস্তান সরকার তাকে ‘সিতারা ই জুরাট পদকে পুরস্কৃত করে । অতঃপর রয়াল জর্ডানিয় বিমানবাহিনিতে যোগদানের সুযোগ পান । সেখানে তিনি পরামর্শক  হিসেবে নিযুক্ত হলেও ১৯৬৭ সালে আরব ইসরাইল যুদ্ধ চলাকালিন সক্রিয়ভাবে যোগদান করে বীরত্বের স্বাক্ষর রাখেন । ৮ টি ইসরাইলি সুপারসনিক “ডেসলট সুপের মিস্তেরে “ জঙ্গিবিমান তিনি আকাই ভুপাতিত করার বিরল ক্রতিত অর্জন করেন । জরডান ,ইরাক ও পাকিস্তান ৩ টি ভিন্ন বিমানবাহিনির হয়ে আকাশ যুদ্ধে অংশগ্রহন করে সাফল্য অর্জন করেন ।  জরডান ও ইরাক  সরকার তাকে যথাক্রমে উইসান আল ইসতিকলাল ও নাত আল মুজাহ পদকে সম্মানিত করে । ১৯৭১ সালে মুক্তিযুদ্ধ সুরু হলে তিনি আরও কয়েকজন  বাঙালি পাইলট সহ যুদ্ধ বিমান হাইজ্যাক  করে দেশের তরে যুদ্ধ করার পরিকল্পনা করলেও তার বাস্তবায়ন হয়ে উঠেনি । পাকিস্তান গোয়েন্দা সংস্থা তাকে আতক করে কোট মার্শালে রায় দিয়েছিল । তবে জরডানিয় বাদশাহ হুসেইন তালাল এর অনুরুধে তাকে জামিন দেয়া হয় । সাইফুল আজাম নিজে মুক্তিযুদ্ধে অংশগ্রহণে অপরাগ হলেও উল্লেখযোগ্য ইসয় হোল বীরস্রেট মতিউর রহমাঙ্কে বিমান হাইজ্যাকে তিনি সহায়তা করেছিলেন । এমনকি মতিউরএর বিমানবাহিনী একাডেমীর T-33 প্রশিক্ষণকালে তিনই ছিলেন প্রশিক্ষক । ১৯৭৪ সালে স্বাধীন মাতৃভূমিতে ফিরে বাংলাদেশ বিমানবাহিনীতে যোগদান করেন । বিএএফ বেস বাশার এর বেস কমান্ডারের দায়িত্ব পালন  করেন । ১৯৭৯ সালে তিনই তার প্রশংসনীয় সাআম্রিক জীবন হতে অবসর গ্রহন করেন । অতঃপর ১৯৮২ থেকে ১৯৮৪  এবং ১৯৮৭ থেকে ১৯৮৮ সাল  পর্যন্ত দুবার বেসামরিক বিমান চলাচল কর্তৃপক্ষের চেয়ারম্যানের দায়িত্ব পালন করেন । এছাড়াও বাংলাদেশ চলচিত্র কর্পোরেশনের বাবস্থাপনা পরিচালক ছিলেন । ১৯৯১-৯৬ সালে পাবনা-৩ আসন থেকে সংসদ সদস্য হিসেবে নির্বাচিত হন । নিজস্ব ব্যাবস্থাপনা পরিচালক ছিলেন একজন হিসেবে স্বীকৃতি দেয় । ২০২০ সালের ১৪ ই জুন দেশের এই সূর্যসন্তান পরলোকগমন করেন ।  আজও ফিলিস্তিনের লাখো মুক্তিকামী জনতা তাঁকে ভক্তিভরে স্মরণ করে । একজন দক্ষ পাইলত ছাড়াও তার পরিছয় ছিল একজন দেশপ্রেম নিতিবান ও বাক্তিত্ববান মানুষ হিসেবে সোনার বাংলাদেসঘ ধন্য হোক এরুপ সোনার মানুষ দিয়ে এগিয়ে জাক বহুদুর ।
+
+ <br>
+ <br></p>
+  </article><br><br>
+
+  <div class="d-flex justify-content-around ">
+    <div class="justify-content-start"><a href="bangla_topic-6.html" class="" style="text-decoration:none; color: #36454f;">&larr; Prev Post</a></div>
+    <div class="justify-content-end"><a href="bangla_topic-8.html" class="" style="text-decoration:none; color: #36454f;">Next Post &rarr;</a></div>
+  </div>
+</div>
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+
+</body>
+</html>

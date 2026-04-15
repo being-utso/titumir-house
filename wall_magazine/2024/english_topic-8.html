@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wall Magazine TH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+      margin: 10px;
+      font-size: 20px;
+      color: #4d4d4d;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffd700;
+        position: relative;
+        text-decoration: none;
+        margin: 0 12px;
+        font-family: oswald;
+      }
+      .navbar-dark .navbar-nav .nav-link:before{
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: 5px;
+        left: 0;
+        background: #ffd700;
+        transition: all 0.4s ease;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 100%;
+       right: 13px;
+       color: #ffd700;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover{
+      color: #ffd700;
+      }
+      .navbar-dark .navbar-brand{
+        color: #ffd700;
+      }
+
+      .link{
+        text-decoration: none;
+        color: #353935;
+        font-family: fantasy;
+      }
+      
+      .link:hover{
+        text-decoration: underline;
+        color: #353935;
+
+      }
+
+  </style>
+</head>
+<body>
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">English Topic 8</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+<div  style="background-color: #f2f2f2;">
+
+
+<div class="mt-5 container">
+    <h1 class="text-center display-5">Animal Farm</h1>
+    <h4 class="text-center"> ~ Cadet Turjo, 2247 </h4> 
+  </div><br>
+
+
+  <article class="container">
+    <p><br>Author: Goerge orwell <br>
+Genre: political satire <br>
+Publication date: 17 august 1945 <br>
+Awards: Hugo awards for best short novel (1946), 
+      Prometheus award- Hall of fame (2011)  <br><br>
+      One of the major vices of humans is the instinct of superiority- which turns out to be one of the major impediments on the way to an equal society. History tells us stories of autocracy in the mask of  revolution and democracy or similar other ideologies. In the book “Animal farm”, the author so mesmerizingly elucidates the epitome of several historical events such as the Russian or French revolution. <br><br> In this novel , a group of farm animals revolt against their human farmer with  the dream of creating a society of the animal where everyone will be free and equal . A boar named ‘Old major’ gathers all the animals of their ‘Manar Farm’ in the  big barn and ignites the aspiration of freedom in their hearts . He manipulates everyone with the blueprint of talking control over the farm overthrowing humans . After the death of Old Major , there younger pigs  - Snowball, Napoleon and Squealer take charge of the revolution. They put forth an ideology named ‘Animalism’ which basically said that all the animals are prohibited to act or behave like humans and everyone will be equal . Being all pumed up and zealous , the animals eventually defeat the farmer Mr. Jones in a battle and take over the entire farm . They give it a crazy name ‘Animal Farm ‘ . At first, the farm was progressing . Every animal was contributing to make the farm prosper . But things go wrong gradually . Being the torchbearer of their successful revolution , the pigs were the leaders . They started being corrupt and breaking the principles they themselves formulated. They used to walk like humans, behave and live like human . Others animal were dissatisfied with them .So to gain validation ,the pigs amend all the 7 principles at animalism and gradually  reduce them to a single principle. It says “ All animals are equal but some animals are more equal than others . The other  day Napoleon invites a human farmer named pikington at a dinner. Looking at the party of the cities through the farmhouse window , the common animals can no longer identify which are pigs and which are human beings . Thus , the commoners were still deprived of their right. The pigs simply used them as a tool to achieve their superior position. <br><br> This allegory is the clear implication of the Bolshevik Revolution in 1917 or technically most of the revolutions all over the world. You can call this novel an “Ironic Dystopian Story” as well . A notorious section of the society will always show false hope of a utopian society. But in fact, utopia itself is a dystopia . This novel transcends time , place or nation and has become universel. The readers of this book will be able to perceive thee dark side of totalitarianism and autocracy in the mask of democracy . Overall , “Animall Farm “ is a novel worth to read. <br><br> This book can be called an  ironic dystopian story as  it will inspire the readers to think about its themes and beware of what happens in the novel that may also happen in our society. This book is a powerful allegory for the dark side of totalitarianism and the importance of individual freedom. There is no question that he hates tyranny, sycophancy, deceitful propaganda, sheeplike acceptance of empty political formulas. His exposures of these detestable vices constitute the best passages in the book. It’s a classic novel that tells the story of a group of farm animals who rebel against their human farmer, hoping to create a society where the animals can be free and equal. Old Major, a prize-winning boar, gathers the animals of the “Manor Farm” for a meeting in the big barn. He tells them of a dream he has had in which all animals live together with no human beings to oppress or control them. When he dies only three nights after the meeting, three younger pigs—Snowball, Napoleon, and Squealer—formulate his main principles into a philosophy called Animalism. According to this philosophy, the animals will boycott everything the humans used to do and act like. Late one night, the animals manage to defeat the farmer Mr. Jones in a battle, running him off the land. They rename the property Animal Farm and dedicate themselves to achieving Major’s dream. At first, Animal Farm prospers. However, the pigs, who become the leaders of the animal community, gradually become corrupt and oppressive, leading to a society that is even worse than the one they overthrew. Eventually, the seven principles of Animalism, known as the Seven Commandments and inscribed on the side of the barn, become reduced to a single principle reading “all animals are equal, but some animals are more equal than others.” Napoleon entertains a human farmer named Mr. Pilkington at a dinner. Looking in at the party of elites through the farmhouse window, the common animals can no longer tell which are the pigs and which are the human beings. <br>
+ <br></p>
+  </article><br><br>
+
+  <div class="d-flex justify-content-around ">
+    <div class="justify-content-start"><a href="english_topic-7.html" class="" style="text-decoration:none; color: #36454f;">&larr; Prev Post</a></div>
+    <div class="justify-content-end"><a href="english_topic-9.html" class="" style="text-decoration:none; color: #36454f;">Next Post &rarr;</a></div>
+  </div>
+</div>
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+
+</body>
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Members of TH</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			color: #4d4d4d;
+			margin-top: 50px;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 50px;
+		}
+		.card {
+			background-color: #ffffff;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 300px;
+			margin: 10px;
+			text-align: center;
+			font-size: 20px;
+			color: #4d4d4d;
+			padding: 10px;
+			border-radius: 10px;
+			transition: transform 0.2s;
+		}
+		.card:hover {
+			transform: scale(1.05);
+			box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+		}
+		.card img {
+			width: 100%;
+			height: auto;
+			border-radius: 10px;
+		}
+		.card p {
+			margin-top: 1vh;
+			margin-bottom: 1vh;
+			font-size: 2.2vw;
+		}
+	
+		.navbar-dark .navbar-nav .nav-link {
+		    color: #ffd700;
+		    position: relative;
+		    text-decoration: none;
+		    margin: 0 12px;
+		    font-family: oswald;
+		  }
+		  .navbar-dark .navbar-nav .nav-link:before{
+		    content: " ";
+		    position: absolute;
+		    height: 3px;
+		    width: 0%;
+		    bottom: 5px;
+		    left: 0;
+		    background: #ffd700;
+		    transition: all 0.4s ease;
+		  }
+		  .navbar-dark .navbar-nav .nav-link:hover:before {
+		    width: 100%;
+			 right: 13px;
+			 color: #ffd700;
+		  }
+		  .navbar-dark .navbar-nav .nav-link:hover{
+			color: #ffd700;
+		  }
+		  .navbar-dark .navbar-brand{
+			  color: #ffd700;
+		  }
+	</style>
+</head>
+<body>
+
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Credits</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+
+
+
+		<h1>The Persons Behind all the Scenes</h1>
+				
+		<!--Painters-->
+		<h2 class="text-center text-muted mt-5">Painters</h2>
+		<div class="container">
+		<div class="row">
+			<div class="card col mb-3">
+				<img src="img/XI/2259.png" alt="THP">
+				<p>Cadet Mahmud</p>
+				<p>Cadet No. 2259</p>
+			</div>
+			<div class="card col mb-3">
+			<img src="img/X/2341.JPG" alt="CDP">
+			<p>Cadet Tafsir</p>
+			<p>Cadet No. 2341</p>
+		</div>
+		<div class="card col mb-3">
+				<img src="img/IX/2377.JPG" alt="TAHP">
+				<p>Cadet Tamim</p>
+				<p>Cadet No. 2377</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="card col mb-3">
+				<img src="img/IX/2410.JPG" alt="THCP">
+				<p>Cadet Tanjim</p>
+				<p>Cadet No. 2410</p>
+			</div>
+			<div class="card col mb-3">
+				<img src="img/VIII/2454.JPG" alt="THGP">
+				<p>Cadet Raiyan</p>
+				<p>Cadet No. 2454</p>
+			</div>			
+		</div></div>
+		<!--Calligraphers-->
+		<h2 class="text-center text-muted mt-5">Calligraphers</h2>
+		<div class="container sm">
+		<div class="row">
+		<div class="card col mb-3">
+			<img src="img/XI/2241.png" alt="XII Cadet 1">
+			<p>Cadet Shahriar</p>
+			<p>Cadet No. 2241</p>
+		</div>
+		<div class="card col mb-3">
+			<img src="img/XI/2223.png" alt="XII Cadet 2">
+			<p>Cadet Abdullah</p>
+			<p>Cadet No. 2223</p>
+		</div>
+		<div class="card col mb-3">
+			<img src="img/X/2328.JPG" alt="XII Cadet 3">
+			<p>Cadet Jihad</p>
+			<p>Cadet No. 2328</p>
+		</div></div>
+		<div class="row">
+		<div class="card col mb-3">
+			<img src="img/IX/2399.jpg" alt="XII Cadet 10">
+			<p>Cadet Riyaj</p>
+			<p>Cadet No. 2399</p>
+		</div>
+		</div></div></div>
+
+		<!--Decorators-->
+		<h2 class="text-center text-muted mt-5">Decorators</h2>
+		<div class="container">
+		<div class="row">
+		<div class="card col mb-3">
+			<img src="img/XI/2254.png" alt="XI Cadet 1">
+			<p>Cadet Maruf</p>
+			<p>Cadet No. 2254</p>
+		</div>
+		<div class="card col mb-3">
+			<img src="img/XI/2247.png" alt="XI Cadet 2">
+			<p>Cadet Turjo</p>
+			<p>Cadet No. 2247</p>
+		</div>
+		<div class="card col mb-3">
+			<img src="img/X/2346.JPG" alt="XI Cadet 3">
+			<p>Cadet Mushfiq</p>
+			<p>Cadet No. 2346</p>
+		</div></div>
+		
+		<div class="row">
+		<div class="card col mb-3">
+			<img src="img/VIII/2437.JPG" alt="XI Cadet 10">
+			<p>Cadet Nahean</p>
+			<p>Cadet No. 2437</p>
+		</div>
+		<div class="card col mb-3">
+			<img src="img/VIII/2451.JPG" alt="XI Cadet 11">
+			<p>Cadet Fatin</p>
+			<p>Cadet No. 2451</p>
+		</div>
+		<div class="card col mb-3">
+			<img src="img/VIII/2464.JPG" alt="XI Cadet 12">
+			<p>Cadet Roman</p>
+			<p>Cadet No. 2464</p>
+		</div></div></div>
+
+		<!---->
+		<h2 class="text-center text-muted mt-5">Developers</h2>
+		<div class="container">
+		<div class="row">
+		<div class="card col mb-3">
+			<img src="img/XI/2236.png" alt="SSC 1">
+			<p>Cadet Sayem</p>
+			<p>Cadet No. 2236</p>
+		</div>
+		<div class="card col mb-3">
+			<img src="img/X/2323.JPG" alt="SSC 2">
+			<p>Cadet Labib</p>
+			<p>Cadet No. 2323</p>
+		</div>
+		<div class="card col mb-3">
+			<img src="img/X/2359.JPG" alt="SSC 3">
+			<p>Cadet Basir</p>
+			<p>Cadet No. 2359</p>
+		</div></div>
+		
+		</div>
+		<!-- Add more cards for each member -->
+	<br><br><br><br><br>
+
+
+
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+</body>
+</html>

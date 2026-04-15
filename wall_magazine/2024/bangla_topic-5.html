@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wall Magazine TH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+      margin: 10px;
+      font-size: 20px;
+      color: #4d4d4d;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffd700;
+        position: relative;
+        text-decoration: none;
+        margin: 0 12px;
+        font-family: oswald;
+      }
+      .navbar-dark .navbar-nav .nav-link:before{
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: 5px;
+        left: 0;
+        background: #ffd700;
+        transition: all 0.4s ease;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 100%;
+       right: 13px;
+       color: #ffd700;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover{
+      color: #ffd700;
+      }
+      .navbar-dark .navbar-brand{
+        color: #ffd700;
+      }
+
+      .link{
+        text-decoration: none;
+        color: #353935;
+        font-family: fantasy;
+      }
+      
+      .link:hover{
+        text-decoration: underline;
+        color: #353935;
+
+      }
+
+  </style>
+</head>
+<body>
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Bangla Topic 5</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+<div  style="background-color: #f2f2f2;">
+
+
+<div class="mt-5 container">
+    <h1 class="text-center display-5">উপেক্ষিত ছবি</h1>
+    <h4 class="text-center"> ~ ক্যাডেট তানজিম, ২৪১০ </h4> 
+  </div><br>
+
+
+  <article class="container text-center">
+    <p><br>সময়ের আজ বড্ড অসুখ; <br>
+দিন ফুরোয়, নেমে আসে অতিপৃক্ত কালো আধার। <br>
+উড়ন্ত চিলের সোনালি ডানায় গোধূলির আলোকচ্ছটার <br>
+নির্বাসন হয়; শূন্যতায় পূর্ণ হয় বুক, <br>
+কেউ জানে না, কেবল সিক্ত দুটি চোখ জানে- <br>
+সময়ের আজ বড্ড অসুখ। <br>
+ <br>
+নিঝুম শহরে এখন অশরীরী নীরবতা <br>
+সরব নগরীর অচেনা নীরব রূপের সামনে এক নত মস্তক, <br>
+প্রত্যহ দাড়িয়ে রয় – চোখ জোড়া তার সদা জাগরূক <br>
+প্রাণ পনে পণ করে, এই কলুষিত মানবতা <br>
+মেনে নেবে। তবুও যা পর তা রয়ে যায় পর, <br>
+মহাকাল জানে সেই কথা। <br>
+ <br>
+শ্রাবণের বর্ষায় খুঁজে যায় সুখ <br>
+বৃষ্টিবিলাসী যুগল । জানালার পাশে কোনো কবি <br>
+কাব্য সাজায়। তবু নগরীর চেনা এক জ্যান্ত ছবি- <br>
+গৃহহীন রহিমার ছোট মেয়ের তীব্র  অসুখ, <br>
+অগোচরে রয়ে যায় । পাশে গাড়ি ছুটে যায় <br>
+দেখে না কেউ শিশুটির মুখ। <br>
+ <br>
+আকশের নিঃসঙ্গ তারারাও জানুক – <br>
+রাত শেষে আলো আসে , মিলিয়ে যায় সব আধার, <br>
+ভিজে ওঠে দুটো চোখ , প্রার্থনা চলে রহিমার। <br>
+নীরব নগরীতে ক্মে আসে ছোট্ট এক হৃৎপিণ্ডের ধুকধুক, <br>
+দিন বদলে চলে, বদলায়না শুধু <br>
+সময়ের তীব্র অসুখ।
+
+ <br>
+ <br></p>
+  </article><br><br>
+
+  <div class="d-flex justify-content-around ">
+    <div class="justify-content-start"><a href="bangla_topic-4.html" class="" style="text-decoration:none; color: #36454f;">&larr; Prev Post</a></div>
+    <div class="justify-content-end"><a href="bangla_topic-6.html" class="" style="text-decoration:none; color: #36454f;">Next Post &rarr;</a></div>
+  </div>
+</div>
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+
+</body>
+</html>

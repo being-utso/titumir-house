@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wall Magazine TH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+      margin: 10px;
+      font-size: 20px;
+      color: #4d4d4d;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffd700;
+        position: relative;
+        text-decoration: none;
+        margin: 0 12px;
+        font-family: oswald;
+      }
+      .navbar-dark .navbar-nav .nav-link:before{
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: 5px;
+        left: 0;
+        background: #ffd700;
+        transition: all 0.4s ease;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 100%;
+       right: 13px;
+       color: #ffd700;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover{
+      color: #ffd700;
+      }
+      .navbar-dark .navbar-brand{
+        color: #ffd700;
+      }
+
+      .link{
+        text-decoration: none;
+        color: #353935;
+        font-family: fantasy;
+      }
+      
+      .link:hover{
+        text-decoration: underline;
+        color: #353935;
+
+      }
+
+  </style>
+</head>
+<body>
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Bangla Topic 1</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+<div  style="background-color: #f2f2f2;">
+
+
+<div class="mt-5 container">
+    <h1 class="text-center display-5">নূরজাহান</h1>
+    <h4 class="text-center"> ~ ক্যাডেট আব্দুল্লাহ, ২২২৩ </h4> 
+  </div><br>
+  
+
+  <article class="container">
+    <p><br>একটি কাঁটাতার , একপাশে টিউলিপ, গোলাপসহ নানান দৃষ্টিনন্দন ফুলের সমারহ; নিষ্কলুষ , নির্মল, স্নিগ্ধ, অপরপাশে জ্বলছে দাউদাউ আগুন । যেন সাক্ষাৎ জাহান্নাম । লেলিহান সেই শিখায় ক্রিমসন প্যাস্টেল দিয়ে সন্তর্পণে রঙ করতে থাকা ছোট্ট মেয়েটার কাজে ছেদ পড়ল দরজার ঠকঠক শব্দে। দুটো ঠকঠক শব্দ, এই শব্দ সে চেনে, এ যে তার প্রিয় শব্দ ! রং- টং বাদ দিয়ে সে ছুটে যায় দরজার কাছে , ভারী হয়ে থাকা মেঘ হতে একপশলা বৃষ্টি যেমন ঝুপ করে নেমে পড়ে মাটিতে, ঠিক সেভাবেই সে বাবাকে জড়িয়ে ধরে তার বুকের সাথে মিশে যেতে চাইলো। সারাদিন হাড়ভাঙ্গা পরিশ্রম করে বাসায় ফেরার পর প্রতিদিন এভাবে বুকে টেনে নিয়ে আমানের সব কষ্ট – সব জরা ঘুছে যায়। অতঃপর আবার হাত খালি দেখে গাল ফুলিয়ে অভিমানের সুরে বলল, “তুমি আজকেও আমার জন্য জামাটা আনোনি , তাই না?” <br><br> 
+    -হ্যাঁ রে মা । এত্ত কাজ – ভুলেই গেছিলাম। <br>
+    -তোমার সাথে আড়ি। <br>
+    -আরে আরে , শোনো, জামাটা এই ঈদেই এনে দেবো তোমায়। প্রমিস। <br>
+    - তিন সত্যি? <br>
+    - তিন সত্যি। <br><br>
+    বাবা-মেয়ের খুনসুটি দেখে ফাতিমা হাসে। সে এই বাড়ির গিন্নি। তার নিতান্তই মলিন আর ছোট এই বাড়িটা এত্ত বেশি ভালবাসা আর সুখ করে যার ঠাই হয়তো সুবিশাল রাজপ্রাসাদেও হতো না। এত আর্থিক টানাপোড়ন ও অস্থিতিশীলতার মাঝেও অদ্ভুতভাবে তাদের দিন কেটে যাচ্ছে। যেন এক অলৌকিক শক্তি তাদের ওপর থেকে বার বার সব অনিষ্ট সরিয়ে দেয়। ফাতিমার অবাকই লাগে । এত ভাগ্যবতি কেনো সে? উত্তর তার জানা নেই। তবে তারে ভয় হয়- প্রিয় মানুষ দুটোকে হারানোর ভয় হয় । স্মৃতিপটে আজও তা স্পষ্ট । ফাতিমা যেদিন মা হলো , সেই দিনটা ছিল দঃস্বপ্নের মতো। দিন আসলে- রাত , মধ্যরাত, বিকট শব্দে মাটি কেপে উঠেছিল বারবার। চারদিকে সাইরনের ধ্বনি – প্রতিধবনি। কিছুক্ষণ পর পর আকাশে আলোকচ্ছটায় চোখ ধাদিয়ে যাচ্ছিল ওর। কেয়ামত বুঝি হলো ! চরম ভয়ে জড়সড় আসছিলো ও। ওর হাতটা শক্ত করে ধরে রেখেছিলো আমান । এই দুর্যোগের জন্ম হলো নবজাতকের। সে কী কান্না! খুব যত্নে তাকে কোলে নিলো ফাতিমা। যেন জান্নাত থেকে চিলতে আলো উপহার দিলেন খোদা তাকে । <br> “নূরজাহান” – শব্দটাই তার মাথায় এল তার। এর অর্থ হলো – জগতের আলো । মেয়েটার নাম তাই এটাই রাখা হলো । গত পাঁচটা বছর ধরে আমান ফাতিমার সংসার আলো করে ধরে রেখেছে নূরজাহান । ঘরময় পায়চারি করে , কত্ত দুষ্টমি করে, কত কথা বলে, নানান বায়না ধরে । আমানের খারাপই লাগে। মেয়ের বেশিরভাগ বায়নাই পূরণ করতে পারেনা সে। প্রতিবারই “ভূলে জাওয়া”-র ভান করে । তারপর নূরজাহান গাল ফুলিয়ে অভিমান করে বসে থাকলে আমান তার পাশে গিয়ে বসে ; তার রাগ ভাঙ্গায় , তাকে হাসায় , “আড়ি” থেকে “ভাব” হয় বাবা মেয়ের। এসব তাদের নিত্যদিনের সুন্দর ছোট ছোট গল্প। তবু পিতৃহৃদয় কাদে আর বলে, “ মা-রে, আমি পারলে দুনিয়াটা তোর জন্য নিয়ে আসতাম …।“  <br><br> (কিছূদিন পর ) <br><br> আজ ঈদের দিন । ঈদের নামাজ পড়তে আসার সময় নূরজাহান তাকে বিদায়ও দেয়নি। হয়তো ভেবেছে বাবা আবারও ‘ভুলে গেছে’ তার প্রমিসের কথা। কিন্তু আমান তার কথা রাখবে আজকে। আগে থেকে কিছু ধার করা টাকা নিয়ে দোকানে গেলো সে। খুঁজে খুঁজে মেয়ের প্রিয় লাল জামাটা কিনল । নূরজাহানকে এই জামায় পরীর মতো লাগবে। আচ্ছা ও কি অবাক হবে? না-ও হতে পারে কিন্তু । নূরজাহান কিন্তু বেশ বুদ্ধিমতি। হয়তো ধরেই নিয়ে ছিল আজকের দিনে সে জামাটা পাবে সে। আসলে ও সবই জানে, সবই বোঝে। সেদিন চুপি সারে মেয়ের ড্রয়িং খাতাটা উল্টিয়ে দেখছিলো। কত সুন্দর ওর আঁকা ছবি গুলো! ওগুলোর ভিড়ে একটা পাতায় ভাঙ্গা-ভাঙ্গা অক্ষরে লেখা ছিলো- <br><br>“বাবা, আমি জানি তুমি কিচ্ছু ভোলো না । তুমি কষ্ট পেও না কিন্তু। আমি তোমাকে খুব ভালোবাসি।“ <br><br>ভাবতে ভাবতেই আমান চোখ মোছে। এ যে ভালোলাগার কান্না। তার আরও ভালো লাগবে যখন তার নূরজাহান লাল জামাটা পেয়ে শক্ত করে জড়িয়ে ধরবে । আজ যে ঈদ! আজ যে খুশির দিন! হঠাৎই একটা ক্ষীণ শব্দ পাওয়া গেলো। শব্দটা তীব্র হতে লাগলো। আকাশ কাঁপিয়ে একঝাক বোমারু বিমান উড়ে গেলো। এই বিমান গাজার মানুষ চেনে। এগুলো ইসরায়েলি বিমানবাহিনীর F-16 । অত্যাধুনিক মিসাইলে বিস্ফোরিত হলো নিরস্ত্র মানুষ গুলোর শান্তির নীড়। বিকট শব্দে একে একে সব দালান ধবসে পড়তে লাগল। উৎসবমুখর দিনটা পরিণত হলো হাজারো গাজাবাসীর অন্তিম দিনে। যতদূর চোখ যায় , দেখা যায় ধ্বংসস্তূপ ; আর সেখানে চাপা পড়া মানুষগুলোর ধ্বংসস্তূপ থেকে বেরিয়ে আসা হাত পা । আমান এখনও বেচে আছে । শরীরের সর্বশক্তি দিয়ে দৌড়াতে লাগ্লো।সে খুব করে চায় যেন দুঃস্বপ্নটা এখনই ভেঙ্গে যায় । কিন্তু এ বাস্তবতার চেয়ে দুঃস্বপ্ন অনেক প্রীতিকর। <br><br> তার ছোট্ট ঘরটা যেখানে ছিলো , সেখানে সে খুঁজে পেলো জীবনের সবচেয়ে প্রিয় দুটি মানুষের মৃতদেহ । তার সহধর্মিণী ফাতিমা- যার মাঝে সে জীবনের সকল ভালোবাসা খুঁজে পায়। তার পাশেই পড়ে আছে তার প্রিয় নূরজাহান- তার পৃথিবী, তার জগতের আলো । আমানের হাতে এখনো শপিং ব্যাগে লাল জামাটা। কিন্তু নূরজাহানের পবিত্র লাল রক্তে রঞ্জিত হয়ে আছে ওর পরিহিত জামাটাও । আমান লাল জামাটা ব্যাগ থেকে বের করে ওর লাশের ওপর বিছিয়ে দেয়। তার গাল বেয়ে আঝোরে ঢলে পড়ছে কুসুম গরম অশ্রুধারা। সে চোখ মোছে না। দু হাত তুলে সে দুয়া করে । যেন তার নিষ্পাপ নূরজাহান লাল জামাটা পরে জান্নাতে খেলা করে । <br><br> কাঁটাতারের এপারে আগুন জ্বলতে থাকে। দাউ দাউ করে জ্বলতে থাকে। 
+ <br>
+ <br></p>
+  </article><br><br>
+
+  <div class="d-flex justify-content-around ">
+    <!--<div class="justify-content-start"><a href="bangla_topic-1.html" class="" style="text-decoration:none; color: #36454f;">&larr; Prev Post</a></div>-->
+    <div class="justify-content-end"><a href="bangla_topic-2.html" class="" style="text-decoration:none; color: #36454f;">Next Post &rarr;</a></div>
+  </div>
+</div>
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wall Magazine TH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+      margin: 10px;
+      font-size: 20px;
+      color: #4d4d4d;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffd700;
+        position: relative;
+        text-decoration: none;
+        margin: 0 12px;
+        font-family: oswald;
+      }
+      .navbar-dark .navbar-nav .nav-link:before{
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: 5px;
+        left: 0;
+        background: #ffd700;
+        transition: all 0.4s ease;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 100%;
+       right: 13px;
+       color: #ffd700;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover{
+      color: #ffd700;
+      }
+      .navbar-dark .navbar-brand{
+        color: #ffd700;
+      }
+
+      .link{
+        text-decoration: none;
+        color: #353935;
+        font-family: fantasy;
+      }
+      
+      .link:hover{
+        text-decoration: underline;
+        color: #353935;
+
+      }
+
+  </style>
+</head>
+<body>
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">English Topic 2</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+<div  style="background-color: #f2f2f2;">
+
+
+<div class="mt-5 container">
+    <h1 class="text-center display-5">Treasure </h1>
+    <h4 class="text-center"> ~ Cadet Raiyan, 2460 </h4> 
+  </div><br>
+
+  <article class="container">
+    <p><br>It’s a very special day in Bruno’s life. He’s all pumped up – dressed in new uniform, shiny oxford shoes and carrying brand new backpack having the picture of his favourite cartoon character embedded on it. His mom kissed his forehead as always bids farewell waving her hand until he enters the gate. Bruno stands in front of a gigantic building. He literally faces 90o up in the sky and still can’t see the top most floor. He is flabbergasted. The newly blossomed roses and tulips in the nearby garden, the humungous school clock and the new sprightly faces all around – all of them wish this fresher for his wonderful journey ahead. He finds his classroom and steps in. He can see many vacant seats with only a students or two sitting on each bench. But to his surprise, none of his classmates let him sit beside them; NOBODY. All of a sudden, a boy blows a whistle drawing his attention and says, “Hey you Alien! This ain’t your planet!” and whole class bursts out laughter. Bruno is shocked; he kooks at all the wickedly laughing faces and his spectacles become blurry. Meanwhile, he feels a warm hand on his shoulder from behind. The boy says, “Hey it’s okay. You can sit with me.” Ignoring all the whispers and side eyes they’re having. Mike and Bruno sit together. They become good friends in a short time. Bruno shares his story with him. He has a congenial condition called ‘Cleft lips and palate’ for which he has a deformed face since birth. Every night he stares the mirror and asks God – “Why me?” He never got a reply. Even in the last Christmas, he didn’t wish anything that a typical kid like him would wish. He wrote,
+“Dear Santa , Please make my face look normal like others…..” But Santa couldn’t. On that day, when he shared this Santa story with his peers, they mocked , “May be Santa was freightened seeing your weird face and fled!” Bruno was introvert and shy. Never had someone to share everything without having the fear of being judged, someone to laugh with and a shoulder to cry on . He always believe that he will never have a friend and will die alone – until he found Mike’s His very first friend . It was Mike who saw beyond his appearance- deep inside and found the beast soul ever . Bruno tells him, “I’m not like others …… is that my fault?” He replies , “You are someone who no one could ever be. You have a good heart and that’s what makes you special.” Two buddies had a lot of common. They love sunset, books, movies, riding cycle and feeding flocks pigeons in the park. They become BFFs; Best Friend Forever. Or, more like “Brothers from different mothers”. Mike had others friends too, Bruno had none. So out of empathy Mike spends most of his leisure with him. They ride bicycles on the hilly roads of Mount Colorado; just to watch the sunset from a height.
+ <br><br>Time flies; it flew for them as well. After 13 years , they entered into college. Most importantly , Bruno is starting his new life. Because he’s become aged enough to have plastic surgery on his face. With this new appearance, he looks quite handsome. This time when he entered into his classroom , all the smiling faces wave hands at him. New look, new friends, new life. Within just a couple of weeks, his instagram profile filled up with dazzling photos of him; “The new version of Bruno” to be precise. Mike is really happy for him . But what makes his smile fade away is the increasing distance between him and Bruno.His rusty bicycle lies idle in his garage . In the street , they meet sometimes and Mike wave hands at him. But Bruno just gives him a mere smirk and continues gossiping with his sidekicks- exactly how someone treats stranger at streets. Mike recognizes Bruno’s face but doesn’t recognize the inner Bruno- who died in oblivion. <br><br>(Few days later…….)<br><br>It’s Halloween tonight. Bruno has prepared himself with quite a funny attire – just for fun. But as soon as he enters the halloween party , everyone screams like they have seen Lucifer-totally leaving him clveless. Everyone starts to step away from him. He says, “Guys come on , It’s me ! Bruno! I’m in a funny attire you know. What happened to you all ?” Everyone starts to tell at him , “You can never be Bruno. You are an Alien punk and this ain’t your planet! “ Then someone gives him a mirror and he just couldn’t believe it. His face has become deformed like before – and it’s not a costume. It’s been permanent! Meanwhile , overcrowded has become vacant. Except one person-Mike . He smiles at him and says, “I know it’s you Bruno. Long time no see …… How are you?” <br><br>Suddenly he wakes up. It’s actually Christmas . He stares at the red socks beside his bed and reminisces his childhood days . He wished Santa to make his face look like others – just to get some friends at least. This very wish of him wasn’t really granted . But he got such a friend in his life who loved him with all his imperfections and follows. He got a friend for lifetime . But in search of friend’s, he lost two things- his unique inner Bruno, and Mike. <br><br>Bruno is now standing in front of Mike’s house. He press the doorbell twice and the door opens. Mike is kinda shocked seeing him come after a long time . Bruno hugs him so tightly and starts to cry like a guilty little child. Mike smiles , pats his back and whispers , “Hey Bruno, Long time no see. How are you?”  </p>
+  </article><br><br>
+
+  <div class="d-flex justify-content-around ">
+    <div class="justify-content-start"><a href="english_topic-1.html" class="" style="text-decoration:none; color: #36454f;">&larr; Prev Post</a></div>
+    <div class="justify-content-end"><a href="english_topic-3.html" class="" style="text-decoration:none; color: #36454f;">Next Post &rarr;</a></div>
+  </div>
+</div>
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+
+</body>
+</html>

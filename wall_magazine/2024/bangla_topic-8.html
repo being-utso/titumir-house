@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wall Magazine TH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+      margin: 10px;
+      font-size: 20px;
+      color: #4d4d4d;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffd700;
+        position: relative;
+        text-decoration: none;
+        margin: 0 12px;
+        font-family: oswald;
+      }
+      .navbar-dark .navbar-nav .nav-link:before{
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: 5px;
+        left: 0;
+        background: #ffd700;
+        transition: all 0.4s ease;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 100%;
+       right: 13px;
+       color: #ffd700;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover{
+      color: #ffd700;
+      }
+      .navbar-dark .navbar-brand{
+        color: #ffd700;
+      }
+
+      .link{
+        text-decoration: none;
+        color: #353935;
+        font-family: fantasy;
+      }
+      
+      .link:hover{
+        text-decoration: underline;
+        color: #353935;
+
+      }
+
+  </style>
+</head>
+<body>
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Bangla Topic 8</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+<div  style="background-color: #f2f2f2;">
+
+
+<div class="mt-5 container">
+    <h1 class="text-center display-5">ক্রীতদাসের হাসি</h1>
+    <h4 class="text-center"> ~ ক্যাডেট রিয়াজ, ২৩৯৯ </h4> 
+  </div><br>
+
+
+  <article class="container">
+    <p>লেখকঃ শওকত ওসমান <br>
+১ম প্রকাশঃ ১৯৬২ <br>
+প্রাপ্ত পুরস্কারঃ আদমজী সাহিত্য পুরস্কার, বাংলা একাডেমি পুরস্কার <br><br>
+
+      যেথা আছে প্রেম অন্তরে প্রণয় –  <br>
+দুর্ভিক্ষ হোক দ্বারমুখী  <br>
+সুখ সেথা কড়া নাড়ে জানালায় – <br>
+বিশিষ্ট কথা সাহিত্যিক শওকত ওসমান রচিত এ উপন্যাসটি কার কার মতে তার রচিত শ্রেষ্ঠ উপন্যাস । <br><br>
+প্রথমেই ‘আলেফ লায়লা ওয়া লায়লা বা সহস্র এক রাত্রি নয় বরং আলেফ লায়লা ওয়া লায়লানে বা সহস্র দুই  রাত্রি গল্পের অবতারনা করে লেখক পাঠকের দৃষ্টিকে আকৃষ্ট করেছেন । আর এই বিশেষ চিত্তাকর্ষক গল্পটি হচ্ছে জাহাকুল আবদ বা ক্রীতদাশের হাসি  । ১৯৬২ সালে রচিত উপন্যাসটি খানিকটা ঐতিহাসিক উপন্যাসের স্বাদ আস্বাদন করাতে সক্ষম হলেও স্থান কাল পাত্রের ভেদে বিশদ বিবরন নেই । তাই এদিকে সমকালিন উপন্যাসের কাতারে ফেলাই সমীচীন । ঘটনাতি খলিফা হারুন উর রাশিদকে খল চরিত্রে অবতারন করা হলেও এখানে মুলত স্বৈরাচারী আইয়ুব খানের শাসনের দিকটি ফুটে উঠেছে ।  <br>উপন্যাসটিতে বাদশাহের মধ্যস্থতায় হাবশি ক্রীতদাস তাতারি এবং আরমেনিয় বাদি মেহেরজানের গুপ্ত প্রনয়ের আক্ষান বরনিত হয়েছে । দুর্ভাগ্য কিংবা সভাগু ক্রমে  সহচর মশরুরের  দ্বারা গভীর রাত্রে তাদের প্রেমলীলায় রুষ্ট হলেও তাদের মোহময় হাসিতে মুগ্ধ হয়ে তিনি তাদের ক্ষমাতো করেনই – তথাপি মুক্তিলাভ করে ক্রীতদাসযুগল । তবে সত্যি বলতে আল হাবেকা মোররুন সত্য তিক্ত পদার্থ মুক্ত দাস্কে সরিয়ে দেয়া হয় তার ভালবাসার নারী মেহেরজানের নিকট থেকে । স্নান হয়ে যায় দাস তাতারির সেই হাসি । সেই হাসি ফেরাতে খালিফাতো  এমনকি অপ্সরঈরুপে নর্তকীরাও হার মানে । শেষে  ৩ বছরের অত্যাচারের পরেও যখন সেই হাসি চিরম্লান তখনই দাক পরে মেহেরজানের । কিন্তু ভাগ্যের কি নির্মম পরিহাস দাস কে   ভুলে  তখন সে খলিফায় স্ত্রী । ক্ষমতা আর শক্তিকে দেখিয়ে মানুষের মন অধিকার করা যায় না । এটিই গল্পটির উপজিব্য এখানে আইয়ুব খানের অত্যাচারে সাধারন মানুষের ক্রোধের খুব সুক্ষ বহিঃপ্রকাশ ঘটেছে । এই উপমার বহিঃপ্রকাশ ঘটাতেই লেখক আলেফ লায়লা ওয়া লায়লানে বা সহস্র দুই  রাত্রি গল্পের আশ্রয় নিয়েছেন । নাট্যধর্মী এ উপন্যাসটি পাঠকের মন জয় করার পাশাপাশি অর্জন  করেছে বাংলা একাডেমী পুরস্কার , একুশে পদকসহ আরও অনেক পুরস্কার । উপন্যাসটিতে শোষণের বিষয়টি এত সুক্ষভাবে উপমার সাহায্যে প্রস্ফুতিত হয়েছে যে  তা পাঠকের দৃষ্টির অগোচরেই রয়ে যায় কিছু ক্ষেত্রে । তবে ক্ষুদ্র কলবরের এই উপন্যাসটি সকল পাঠকের জন্যই সুখপাঠ্য হবে এ আমি হলফ করে বলতে পারি ।
+
+
+
+
+ <br>
+ <br></p>
+  </article><br><br>
+
+  <div class="d-flex justify-content-around ">
+    <div class="justify-content-start"><a href="bangla_topic-7.html" class="" style="text-decoration:none; color: #36454f;">&larr; Prev Post</a></div>
+    <div class="justify-content-end"><a href="bangla_topic-9.html" class="" style="text-decoration:none; color: #36454f;">Next Post &rarr;</a></div>
+  </div>
+</div>
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+
+</body>
+</html>

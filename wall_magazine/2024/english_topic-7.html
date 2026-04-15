@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wall Magazine TH</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="img/logo.png" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background-color: #f2f2f2;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 150px;
+      margin: 10px;
+      font-size: 20px;
+      color: #4d4d4d;
+      padding: 10px;
+      border-radius: 10px;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: #ffd700;
+        position: relative;
+        text-decoration: none;
+        margin: 0 12px;
+        font-family: oswald;
+      }
+      .navbar-dark .navbar-nav .nav-link:before{
+        content: " ";
+        position: absolute;
+        height: 3px;
+        width: 0%;
+        bottom: 5px;
+        left: 0;
+        background: #ffd700;
+        transition: all 0.4s ease;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 100%;
+       right: 13px;
+       color: #ffd700;
+      }
+      .navbar-dark .navbar-nav .nav-link:hover{
+      color: #ffd700;
+      }
+      .navbar-dark .navbar-brand{
+        color: #ffd700;
+      }
+
+      .link{
+        text-decoration: none;
+        color: #353935;
+        font-family: fantasy;
+      }
+      
+      .link:hover{
+        text-decoration: underline;
+        color: #353935;
+
+      }
+
+  </style>
+</head>
+<body>
+
+
+<!--Navbar Starts-->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 pe-2">
+  <a class="navbar-brand display-6" href="index.html" style="font-size: 200%; font-family: oswald;">
+    <img src="img/logo.png" width="70vw" height="70vh" class="align-middle" style="display: inline-block; margin-right: 5px;">Titumir House
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="../2024.html">HOME</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Bangla Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="bangla_topic-1.html">নূরজাহান</a>
+          <a class="dropdown-item" href="bangla_topic-2.html">অসমাপ্ত</a>
+          <a class="dropdown-item" href="bangla_topic-3.html">হাসির মূল্য</a>
+          <a class="dropdown-item" href="bangla_topic-4.html">কৃষ্ণচুড়ার  আত্মকথন</a>
+          <a class="dropdown-item" href="bangla_topic-5.html">উপেক্ষিত ছবি</a>
+          <a class="dropdown-item" href="bangla_topic-6.html">অমরত্ব সুধা</a>
+          <a class="dropdown-item" href="bangla_topic-7.html">সাইফুল আজম</a>
+          <a class="dropdown-item" href="bangla_topic-8.html">ক্রীতদাসের হাসি</a>
+          <a class="dropdown-item" href="bangla_topic-9.html">কর্ণফুলী টানেল</a>
+          <a class="dropdown-item" href="bangla_topic-10.html">জোকস্</a>
+          <a class="dropdown-item" href="bangla_topic-11.html">দেখো তবে এসেছে ফাগুন</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          English Contents
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="english_topic-1.html">Plumeria</a>
+          <a class="dropdown-item" href="english_topic-2.html">Treasure</a>
+          <a class="dropdown-item" href="english_topic-3.html">Floral Demise</a>
+          <a class="dropdown-item" href="english_topic-4.html">Noneliness</a>
+          <a class="dropdown-item" href="english_topic-5.html">A Precious Elixir</a>
+          <a class="dropdown-item" href="english_topic-6.html">Fidel Castro</a>
+          <a class="dropdown-item" href="english_topic-7.html">From Conflagration to Peace</a>
+          <a class="dropdown-item" href="english_topic-8.html">Animal Farm</a>
+          <a class="dropdown-item" href="english_topic-9.html">Matarbari Deep Sea Port</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="bts.html">BEHIND THE SCENES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="credits.html">CREDITS</a>
+      </li>
+      
+    </ul>
+  </div>
+</nav>
+<!--Navbar Ends-->
+<!--Breadcrumb Nav Starts-->
+
+  <div aria-label="container breadcrumb ms-5">
+    <ul class="breadcrumb">
+      <li>&nbsp;&nbsp;</li>
+      <li class="breadcrumb-item"><a href="..">HOME</a></li>
+      <li class="breadcrumb-item"><a href="../wall_magazine.html">WALL MAGAZINE</a></li>
+      <li class="breadcrumb-item"><a href="../2024.html">2024</a></li>
+      <li class="breadcrumb-item active" aria-current="page">English Topic 7</li>
+    </ul>
+  </div>
+<!--Breadcrumb Nav Ends-->
+<div  style="background-color: #f2f2f2;">
+
+
+<div class="mt-5 container">
+    <h1 class="text-center display-5">From Conflagration to Peace</h1>
+    <h4 class="text-center"> ~ Cadet Abdullah, 2223 </h4> 
+  </div><br>
+
+
+  <article class="container">
+    <p><br>500,000 years ago, our ancestor ‘Homo erectus’ invented weapons for the first time ever. They used to hunt animals with spears. Since then, our civilization has marched forward with almost grandeur and greatness. We discovered axe, sword, then rifle, canon and now tanks, submarines, nuclear weapons, UVAs and the list goes on. With the gradual development of human brain over an evolutionary period, our circle of concern became larger as we had other purposes of living except our survival. We aspired to grow more; to reap the highest benefits of ownselvse at any given situation. Thus our aspiration lost its moral ground and the target of our arrow was not the animals unlike Homo erectus, but it was our own species – Homo sapiens. Since just 1900, more than 187 million people died worldwide in wars – which is more than the number of people died in non-communicable diseases. Wars costs us lives, blood, tears, death of our dearest ones. But on the death corpses of martyrs is built the dark empire of Weapon Industry. Statistics show that the top 100 weapon manufacture companies in 2022 alone generated 600 Billion USD from weapon sales. In USA during World War-II, this industry become unlike anything. The allied countries in Europe became USA’s biggest marketplace for armaments. At the end of World War-II , almost every  European nations were devastated both economically and infrastructurally whereas USA made billions of bucks just by selling weapons . Consequently, majority of the world’s gold reserve went to the hands of USA. So the countries worldwide wanted to stabilize and consolidate the value of their currencies by linking them with the US dollar whereas it would be directly linked to gold. Thus in 1944, 44 allied countries signed the “Bretlon  Wood’s Agreement” to leverage convenient transactions in this process. This is how weapon industry pushed USA to become an economic superpower. Even today, the USA’s allies – especially NATO countries depend on their military support. So it’s no wonder why 51 out of 100 weapon manufacturer companies belong to USA. Now, one might find it legitimate to produce armaments for considering as defense purpose. But as a matter of fact, almost all of those 100 weapon companies are under private ownership- meaning that anybody for any purpose can legally purchase weapons from them. This exactly why gun violence – especially “School shooting” is a common term in US. Up until September 2023, about      500 shooting took place there. <br><br> The number #1 weapon company is “Lockheed Martin” of USA; having an annual revenue of 67.571 Billion USD as of 2023. They manufacture most of the modern lethal weapons of all time including the Trident Missile is an SLBM (Submarines Launched Ballistic Missile). Their major marketplace is the governments worldwide. Not just the weapons; governments even hire private merceneries which is officially a violation of international law. Potok, E-not corps, Slovanic corps and Wagner etc. are some merceneries hired by Russia. Nowadays, Cyber merceneries are involved in hacking, planting false intelligence and surveillance. “Team Jorge”, an Israeli cyber mercenary group interfered in 33 presidential campaigns amongst which 27 of them were successful. Besides, the terrorist organisations obtain weapons from black markets of the dark web and quite interestingly, 60% of those weapon are from the US. <br><br>Today the world is ailing. Innocent children are dying in Palestine, in Ukraine. In Westerners’ war of Islamophobia in the post 9/11 years in Afghanistan, Pakistan, Iraq, Syria 4.7 million lives have been lost. Most of them are innocent. Just how the world will never forget 9/11 tragedy, they also won’t forget how the Bush administration used flawed and manipulated intelligence and invaded Iraq with the false allegation of Saddam Husseon’s hold of WMDs (Weapons of Mass Destruction). Consequently, 300k innocent civilians lost their lives. We established the UN to maintain peace. But it’s such an irony when 75% share of global arms experts are from none other than the PS countries. Their crocodile tears are exposed when they Veto UN Security Council resolutions that are against Israel for 46 times since 1972 totally overlooking the genocides in Palestine. <br><br>When we dig deeper into these matters, we’ll understand that in invest on the weapon industry. As of December 2021, at least in these military contractors- which is a drastic conflict of interest. They are called “Hawkish politicians” in contrast of the arms to monger wars and guess what- none but those very common people lose their lives in wars. <br><br> We live in an era when world leaders have a red button on their office table to launch nuclear missiles and initiate a Nuclear Armageddon anytime. We have definitely formulated CTBT, SALT or START. But wars still exist. George Orwell wrote in his famous book “1984” about the concept of “Doublethink”. He said, “War is peace. It’s not meant to be won; it’s meant to be continued” <br><br> But in fact, we will be actually able to put down arms the day we wage war against our human instinct of “Superiority”. We dream of a day when Muslim and Jew children in Palestine will embrace each other; when we’ll unite and thrive as a species ignoring all barricades at the borders. We firmly believe that day will come. That day we’ll see the sunrise on the New Horizon. <br></p>
+  </article><br><br>
+
+  <div class="d-flex justify-content-around ">
+    <div class="justify-content-start"><a href="english_topic-6.html" class="" style="text-decoration:none; color: #36454f;">&larr; Prev Post</a></div>
+    <div class="justify-content-end"><a href="english_topic-8.html" class="" style="text-decoration:none; color: #36454f;">Next Post &rarr;</a></div>
+  </div>
+</div>
+<!--Footer Starts-->
+<footer>
+<div style="min-height: 100px; width: 100%; background-color: black; margin-top: 100px;">&nbsp;
+<div style="color: gray; text-align: center;">Copyright &copy; 2023 Titumir House, CCR. All Rights are Reserved.<br />
+Designed &amp; Developed by <!--Cadet Mamud (XI) &amp; --> <a href="http://ssayem.000webhostapp.com/" target="_blank" style="text-decoration: none; color: gray; font-weight: bold;">Shahriyer Sayem</a>.</div>
+</div>
+</footer>
+<!--Footer Ends-->
+
+
+</body>
+</html>
